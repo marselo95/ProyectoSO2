@@ -197,100 +197,54 @@ public class Admin {
 
             double prob = Math.round((Math.random() * 10)) / 10.0;
 
-            if (prob > 0.4) {
+            if (prob <= 0.4) {
 
                 boolean activo = true;
 
                 while (activo) {
                     Carro Buga = refuerzoB.sacar();
                     Carro Lambo = refuerzoL.sacar();
-                    
-                    if(Buga.localizador == "Buga" && Lambo.localizador == "Lambo"){
-                        activo = false;
-                        switch (Buga.prioridad) {
-                            case 1:
-                                nivel1B.insert(Buga);
-                                break;
-                            case 2:
-                                nivel2B.insert(Buga);
-                                break;
-                            case 3:
-                                nivel3B.insert(Buga);
-                                break;
-                                
-                                
-                            default:
-                                System.out.println("Error");
-                                break;
-                        }
-                        
-                        switch (Lambo.prioridad) {
-                             case 1:
-                                nivel1L.insert(Lambo);
-                                break;
-                            case 2:
-                                nivel2L.insert(Lambo);
-                                break;
-                            case 3:
-                                nivel3L.insert(Lambo);
-                                break;
-                                
-                                
-                            default:
-                                System.out.println("Error");
-                                break;
-                        }
-                    }
-                }
 
-            }else{
-                 boolean activo = true;
-
-                while (activo) {
-                    Carro Buga = refuerzoB.sacar();
-                    Carro Lambo = refuerzoL.sacar();
-                    
-                     
-                    if(Buga.localizador == "Buga" && Lambo.localizador == "Lambo"){
+                    if (Buga.localizador == "Buga" && Lambo.localizador == "Lambo") {
                         activo = false;
-                        
+
                         nivel1B.insert(Buga);
                         nivel1L.insert(Lambo);
-                        
+
                     }
-                    
+
                 }
             }
 
         }
     }
-    
-    public Carro sigB(){
-        if(!nivel1B.itsEmpty()){
+
+    public Carro sigB() {
+        if (!nivel1B.itsEmpty()) {
             Carro Buga = nivel1B.sacar();
             return Buga;
-        } else if(!nivel2B.itsEmpty()){
+        } else if (!nivel2B.itsEmpty()) {
             Carro Buga = nivel2B.sacar();
             return Buga;
-        } else if(!nivel3B.itsEmpty()){
+        } else if (!nivel3B.itsEmpty()) {
             Carro Buga = nivel3B.sacar();
             return Buga;
-        } else{
+        } else {
             return null;
         }
     }
-    
-    public Carro sigL(){
-        if(!nivel1L.itsEmpty()){
+
+    public Carro sigL() {
+        if (!nivel1L.itsEmpty()) {
             Carro Lambo = nivel1L.sacar();
             return Lambo;
-        } else if(!nivel2L.itsEmpty()){
+        } else if (!nivel2L.itsEmpty()) {
             Carro Lambo = nivel2L.sacar();
             return Lambo;
-        } else if(!nivel3L.itsEmpty()){
+        } else if (!nivel3L.itsEmpty()) {
             Carro Lambo = nivel3L.sacar();
             return Lambo;
-        } else{
+        } else {
             return null;
         }
     }
