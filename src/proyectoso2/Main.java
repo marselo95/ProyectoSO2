@@ -4,6 +4,7 @@
  */
 package proyectoso2;
 
+import Classes.CPU;
 import java.util.Random;
 
 /**
@@ -15,25 +16,10 @@ public class Main {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         // TODO code application logic here
         
-        double carroceria = 0;
-        double chasis = 0;
-        double motor = 0;
-        double ruedas = 0;
-        double calidad = 0;
-
-        carroceria = Math.round((Math.random() * 10)) / 10.0;
-        chasis = Math.round((Math.random() * 10)) / 10.0;
-        motor = Math.round((Math.random() * 10)) / 10.0;
-        ruedas = Math.round((Math.random() * 10)) / 10.0;
-        
-        calidad = (carroceria + chasis + motor + ruedas) /4;
-        
-        calidad = Math.round(calidad *10) /10.0;
-        
-        System.out.println(calidad);
+       CPU cpu = new CPU();
         
         
     }

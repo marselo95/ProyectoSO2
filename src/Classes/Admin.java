@@ -4,6 +4,8 @@
  */
 package Classes;
 
+import java.util.Random;
+
 /**
  *
  * @author Marcelo
@@ -23,6 +25,8 @@ public class Admin {
 
     Cola refuerzoL;
     Cola refuerzoB;
+    
+    Cola ganadores;
 
     public Admin() {
         idL = 0;
@@ -38,6 +42,10 @@ public class Admin {
 
         refuerzoB = new Cola();
         refuerzoL = new Cola();
+        
+        ganadores = new Cola();
+        
+        
     }
 
     public int getIdL() {
@@ -136,19 +144,21 @@ public class Admin {
     public void insertarL() {
         this.idL++;
         int prioridad = prioridad();
-        int hp = prioridad * 1000;
+        int hp = new Random().nextInt(800-300)+300;
         Carro lambo = new Carro(this.idL, prioridad, "Lamborghini", hp, "Lambo");
-
+        System.out.println("HP lambo: " + hp);
         switch (lambo.prioridad) {
             case 1:
                 nivel1L.insert(lambo);
                 break;
             case 2:
                 nivel2L.insert(lambo);
+                break;
             case 3:
                 nivel3L.insert(lambo);
+                break;
             default:
-                System.out.println("Error");
+                System.out.println("Error insertar L");
                 break;
         }
     }
@@ -156,7 +166,8 @@ public class Admin {
     public void insertarB() {
         this.idB++;
         int prioridad = prioridad();
-        int hp = prioridad * 1000;
+         int hp = new Random().nextInt(800-300)+300;
+          System.out.println("HP Buga: " + hp);
         Carro buga = new Carro(this.idB, prioridad, "Bugatti", hp, "Buga");
 
         switch (buga.prioridad) {
@@ -165,10 +176,12 @@ public class Admin {
                 break;
             case 2:
                 nivel2B.insert(buga);
+                break;
             case 3:
                 nivel3B.insert(buga);
+                break;
             default:
-                System.out.println("Error");
+                System.out.println("Error insertar B");
                 break;
         }
     }
@@ -247,6 +260,46 @@ public class Admin {
         } else {
             return null;
         }
+    }
+    
+    public String BL1(){
+        String text = nivel1B.text();
+        return text;
+    }
+    
+    public String BL2(){
+        String text = nivel2B.text();
+        return text;
+    }
+    
+    public String BL3(){
+        String text = nivel3B.text();
+        return text;
+    }
+    
+    public String LL1(){
+        String text = nivel1L.text();
+        return text;
+    }
+    
+    public String LL2(){
+        String text = nivel2L.text();
+        return text;
+    }
+    
+    public String LL3(){
+        String text = nivel3L.text();
+        return text;
+    }
+    
+    public String refuerzoL(){
+        String text = refuerzoL.text();
+        return text;
+    }
+    
+    public String refuerzoB(){
+        String text = refuerzoB.text();
+        return text;
     }
 
 }

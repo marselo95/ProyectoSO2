@@ -69,5 +69,25 @@ public class Cola {
         }
         return contador;
     }
+    
+    public String text(){
+        Nodo nodo = this.Inicio;
+        String text = "";
+        
+        while(nodo != null){
+            
+            Carro carro = nodo.data;
+            
+            text += "ID: " + carro.id + " Prioridad: " + carro.prioridad + " Marca: " + carro.marca + " Performance: " + carro.hp;
+            
+            nodo = nodo.next;
+            
+        }
+        
+        
+        return text;
+    }
+    
+  
 
 }
