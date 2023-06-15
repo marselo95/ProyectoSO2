@@ -8,13 +8,13 @@ package Classes;
  *
  * @author Marcelo
  */
-public class Cola {
+public class ColaB {
 
-    private Nodo Inicio, Final;
+    private NodoB Inicio, Final;
 
     String cola = "";
 
-    public Cola() {
+    public ColaB() {
         this.Inicio = null;
         this.Final = null;
     }
@@ -30,7 +30,7 @@ public class Cola {
     }
 
     public void insert(Carro data) {
-        Nodo nodo = new Nodo();
+        NodoB nodo = new NodoB();
         nodo.data = data;
         nodo.next = null;
 
@@ -59,8 +59,8 @@ public class Cola {
         }
     }
     
-    public int size(Cola cola){
-        Nodo temp = cola.Inicio;
+    public int size(ColaB cola){
+        NodoB temp = cola.Inicio;
         int contador = 0;
         
         while(temp !=null){
@@ -71,7 +71,7 @@ public class Cola {
     }
     
     public String text(){
-        Nodo nodo = this.Inicio;
+        NodoB nodo = this.Inicio;
         String text = "";
         
         while(nodo != null){

@@ -8,9 +8,9 @@ package Classes;
  *
  * @author Marcelo
  */
-public class Nodo {
+public class NodoB {
     
     Carro data;
-    Nodo next;
+    NodoB next;
     
 }

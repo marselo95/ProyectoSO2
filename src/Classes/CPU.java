@@ -15,10 +15,11 @@ public class CPU {
     String cola1L;
     String cola2L;
     String cola3L;
+    String colaRL;
     String cola1B;
     String cola2B;
     String cola3B;
-    
+    String colaRB;
     
     
 

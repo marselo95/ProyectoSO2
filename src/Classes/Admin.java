@@ -15,35 +15,35 @@ public class Admin {
     int idL;
     int idB;
 
-    Cola nivel1L;
-    Cola nivel2L;
-    Cola nivel3L;
+    ColaB nivel1L;
+    ColaB nivel2L;
+    ColaB nivel3L;
 
-    Cola nivel1B;
-    Cola nivel2B;
-    Cola nivel3B;
+    ColaB nivel1B;
+    ColaB nivel2B;
+    ColaB nivel3B;
 
-    Cola refuerzoL;
-    Cola refuerzoB;
+    ColaB refuerzoL;
+    ColaB refuerzoB;
     
-    Cola ganadores;
+    ColaB ganadores;
 
     public Admin() {
         idL = 0;
         idB = 0;
 
-        nivel1B = new Cola();
-        nivel2B = new Cola();
-        nivel3B = new Cola();
+        nivel1B = new ColaB();
+        nivel2B = new ColaB();
+        nivel3B = new ColaB();
 
-        nivel1L = new Cola();
-        nivel2L = new Cola();
-        nivel3L = new Cola();
+        nivel1L = new ColaB();
+        nivel2L = new ColaB();
+        nivel3L = new ColaB();
 
-        refuerzoB = new Cola();
-        refuerzoL = new Cola();
+        refuerzoB = new ColaB();
+        refuerzoL = new ColaB();
         
-        ganadores = new Cola();
+        ganadores = new ColaB();
         
         
     }
@@ -56,35 +56,35 @@ public class Admin {
         return idB;
     }
 
-    public Cola getNivel1L() {
+    public ColaB getNivel1L() {
         return nivel1L;
     }
 
-    public Cola getNivel2L() {
+    public ColaB getNivel2L() {
         return nivel2L;
     }
 
-    public Cola getNivel3L() {
+    public ColaB getNivel3L() {
         return nivel3L;
     }
 
-    public Cola getNivel1B() {
+    public ColaB getNivel1B() {
         return nivel1B;
     }
 
-    public Cola getNivel2B() {
+    public ColaB getNivel2B() {
         return nivel2B;
     }
 
-    public Cola getNivel3B() {
+    public ColaB getNivel3B() {
         return nivel3B;
     }
 
-    public Cola getRefuerzoL() {
+    public ColaB getRefuerzoL() {
         return refuerzoL;
     }
 
-    public Cola getRefuerzoB() {
+    public ColaB getRefuerzoB() {
         return refuerzoB;
     }
 
@@ -186,7 +186,7 @@ public class Admin {
         }
     }
 
-    public void actCola(Cola A, Cola B) {
+    public void actCola(ColaB A, ColaB B) {
         if (!A.itsEmpty()) {
             for (int i = 0; i < A.size(A); i++) {
                 Carro temp = A.sacar();
