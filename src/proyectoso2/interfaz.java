@@ -16,6 +16,9 @@ public class interfaz extends javax.swing.JFrame {
      */
     public interfaz() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setResizable(false);
+        this.setVisible(true);
     }
 
     /**

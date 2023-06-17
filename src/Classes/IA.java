@@ -26,7 +26,7 @@ public class IA {
         return lamboListos;
     }
     
-    public void recibirCarros(Carro buga, Carro Lambo, ColaB B1, ColaB B2, ColaB B3, ColaB L1, ColaB L2, ColaB L3, ColaB BR, ColaB LR, ColaB ganadores) throws InterruptedException{
+    public void recibirCarros(Carro buga, Carro Lambo, Cola B1, Cola B2, Cola B3, Cola L1, Cola L2, Cola L3, Cola BR, Cola LR, Cola ganadores) throws InterruptedException{
         
        double prob = Math.round((Math.random() * 10)) / 10.0;
        

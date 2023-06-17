@@ -10,5 +10,4 @@ package Classes;
  * @author mkferrerteran
  */
 public class Lamborghini {
-    
 }
