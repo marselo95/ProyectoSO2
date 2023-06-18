@@ -19,7 +19,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         // TODO code application logic here
         
-       CPU cpu = new CPU();
+       interfaz interfaz = new interfaz();
         
         
     }

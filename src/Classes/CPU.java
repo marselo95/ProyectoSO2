@@ -57,15 +57,15 @@ public class CPU {
             cola3L = admin.LL3();
             colaRL = admin.refuerzoL();
             
-            //interfaz.P1Bug.setText(cola1B);
-            //interfaz.P2Bug.setText(cola2B);
-            //interfaz.P3Bug.setText(cola3B);
-            //interfaz.RefuerzoB.setText(colaRB);
+            interfaz.P1B.setText(cola1B);
+            interfaz.P2B.setText(cola2B);
+            interfaz.P3B.setText(cola3B);
+            interfaz.RefuerzoB.setText(colaRB);
             
-            //interfaz.P1Lam.setText(cola1L);
-            //interfaz.P2Lam.setText(cola2L);
-            //interfaz.P3Lam.setText(cola3L);
-            //interfaz.RefuerzoL.setText(colaRL);
+            interfaz.P1L.setText(cola1L);
+            interfaz.P2L.setText(cola2L);
+            interfaz.P3L.setText(cola3L);
+            interfaz.RefuerzoL.setText(colaRL);
             
             
             if (carroL != null && carroB != null){
@@ -75,25 +75,25 @@ public class CPU {
                 //ia.recibirCarros(carro, carro, admin.BL1, admin.BL2, admin.BL3, admin.LL1, admin.LL2, admin.LL3, admin.refuerzoB, admin.refuerzoL, admin.ganadores);
             }
             
-            //cola1B = admin.BL1(); //Obtiene la lista de prioridad en un String
-            //cola2B = admin.BL2();
-            //cola3B = admin.BL3();
-            //colaRB = admin.refuerzoB();
+            cola1B = admin.BL1(); //Obtiene la lista de prioridad en un String
+            cola2B = admin.BL2();
+            cola3B = admin.BL3();
+            colaRB = admin.refuerzoB();
             
-            //cola1L = admin.LL1();
-            //cola2L = admin.LL2();
-            //cola3L = admin.LL3();
-            //colaRL = admin.refuerzoL();
+            cola1L = admin.LL1();
+            cola2L = admin.LL2();
+            cola3L = admin.LL3();
+            colaRL = admin.refuerzoL();
             
-            //interfaz.P1Bug.setText(cola1B);
-            //interfaz.P2Bug.setText(cola2B);
-            //interfaz.P3Bug.setText(cola3B);
-            //interfaz.RefuerzoB.setText(colaRB);
+            interfaz.P1B.setText(cola1B);
+            interfaz.P2B.setText(cola2B);
+            interfaz.P3B.setText(cola3B);
+            interfaz.RefuerzoB.setText(colaRB);
             
-            //interfaz.P1Lam.setText(cola1L);
-            //interfaz.P2Lam.setText(cola2L);
-            //interfaz.P3Lam.setText(cola3L);
-            //interfaz.RefuerzoL.setText(colaRL);
+            interfaz.P1L.setText(cola1L);
+            interfaz.P2L.setText(cola2L);
+            interfaz.P3L.setText(cola3L);
+            interfaz.RefuerzoL.setText(colaRL);
             
             if (contadorCiclos == 2){
                 contadorCiclos = 0;
