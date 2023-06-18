@@ -30,8 +30,6 @@ public class interfaz extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
-        MainIA = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         PuntajeL = new javax.swing.JTextField();
@@ -65,17 +63,17 @@ public class interfaz extends javax.swing.JFrame {
         jTextField5 = new javax.swing.JTextField();
         jTextField6 = new javax.swing.JTextField();
         jTextField7 = new javax.swing.JTextField();
+        circuitB = new javax.swing.JTextField();
+        circuitL = new javax.swing.JTextField();
+        state = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        winners = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        MainIA.setColumns(20);
-        MainIA.setForeground(new java.awt.Color(0, 51, 51));
-        MainIA.setRows(5);
-        jScrollPane1.setViewportView(MainIA);
-
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 110, 290, 300));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -145,21 +143,21 @@ public class interfaz extends javax.swing.JFrame {
         P2B.setRows(4);
         jScrollPane3.setViewportView(P2B);
 
-        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, -1));
+        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 280, -1));
 
         P1B.setColumns(20);
         P1B.setForeground(new java.awt.Color(0, 51, 51));
         P1B.setRows(4);
         jScrollPane2.setViewportView(P1B);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, -1));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 280, -1));
 
         P3B.setColumns(20);
         P3B.setForeground(new java.awt.Color(0, 51, 51));
         P3B.setRows(4);
         jScrollPane4.setViewportView(P3B);
 
-        getContentPane().add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, -1, -1));
+        getContentPane().add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 280, -1));
 
         jTextField2.setBackground(new java.awt.Color(0, 51, 51));
         jTextField2.setForeground(new java.awt.Color(0, 51, 51));
@@ -175,35 +173,35 @@ public class interfaz extends javax.swing.JFrame {
         RefuerzoB.setRows(4);
         jScrollPane5.setViewportView(RefuerzoB);
 
-        getContentPane().add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 450, -1, -1));
+        getContentPane().add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 450, 310, -1));
 
         RefuerzoL.setColumns(20);
         RefuerzoL.setForeground(new java.awt.Color(0, 51, 51));
         RefuerzoL.setRows(4);
         jScrollPane6.setViewportView(RefuerzoL);
 
-        getContentPane().add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 450, -1, -1));
+        getContentPane().add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 450, 350, -1));
 
         P3L.setColumns(20);
         P3L.setForeground(new java.awt.Color(0, 51, 51));
         P3L.setRows(4);
         jScrollPane7.setViewportView(P3L);
 
-        getContentPane().add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 350, -1, -1));
+        getContentPane().add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 350, 310, -1));
 
         P2L.setColumns(20);
         P2L.setForeground(new java.awt.Color(0, 51, 51));
         P2L.setRows(4);
         jScrollPane8.setViewportView(P2L);
 
-        getContentPane().add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 250, -1, -1));
+        getContentPane().add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 250, 320, -1));
 
         P1L.setColumns(20);
         P1L.setForeground(new java.awt.Color(0, 51, 51));
         P1L.setRows(4);
         jScrollPane9.setViewportView(P1L);
 
-        getContentPane().add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 150, -1, -1));
+        getContentPane().add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 150, 320, -1));
 
         jTextField5.setBackground(new java.awt.Color(0, 51, 51));
         jTextField5.setForeground(new java.awt.Color(0, 51, 51));
@@ -216,9 +214,24 @@ public class interfaz extends javax.swing.JFrame {
         jTextField7.setBackground(new java.awt.Color(0, 51, 51));
         jTextField7.setForeground(new java.awt.Color(0, 51, 51));
         getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 220, 90, 30));
+        getContentPane().add(circuitB, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 200, 350, 40));
+        getContentPane().add(circuitL, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 260, 350, 40));
+        getContentPane().add(state, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 140, 100, 40));
+
+        jLabel13.setText("State");
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 110, 30, 20));
+
+        jLabel14.setText("Ganadores");
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 520, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/Captura de pantalla 2023-06-14 a la(s) 9.20.54 p. m..png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 550));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 540));
+
+        winners.setColumns(20);
+        winners.setRows(5);
+        jScrollPane1.setViewportView(winners);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 550, 560, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -263,20 +276,23 @@ public class interfaz extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextArea MainIA;
     public javax.swing.JTextArea P1B;
     public javax.swing.JTextArea P1L;
     public javax.swing.JTextArea P2B;
     public javax.swing.JTextArea P2L;
     public javax.swing.JTextArea P3B;
     public javax.swing.JTextArea P3L;
-    private javax.swing.JTextField PuntajeB;
-    private javax.swing.JTextField PuntajeL;
+    public javax.swing.JTextField PuntajeB;
+    public javax.swing.JTextField PuntajeL;
     public javax.swing.JTextArea RefuerzoB;
     public javax.swing.JTextArea RefuerzoL;
+    public javax.swing.JTextField circuitB;
+    public javax.swing.JTextField circuitL;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -299,5 +315,7 @@ public class interfaz extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
+    public javax.swing.JTextField state;
+    public javax.swing.JTextArea winners;
     // End of variables declaration//GEN-END:variables
 }

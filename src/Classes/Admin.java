@@ -25,7 +25,7 @@ public class Admin {
 
     Cola refuerzoL;
     Cola refuerzoB;
-    
+
     Cola ganadores;
 
     public Admin() {
@@ -42,10 +42,9 @@ public class Admin {
 
         refuerzoB = new Cola();
         refuerzoL = new Cola();
-        
+
         ganadores = new Cola();
-        
-        
+
     }
 
     public int getIdL() {
@@ -88,7 +87,9 @@ public class Admin {
         return refuerzoB;
     }
 
-    public double calidadL() {
+
+    public double calidad() {
+        
         double carroceria = 0;
         double chasis = 0;
         double motor = 0;
@@ -100,39 +101,46 @@ public class Admin {
         motor = Math.round((Math.random() * 10)) / 10.0;
         ruedas = Math.round((Math.random() * 10)) / 10.0;
 
-        calidad = (carroceria + chasis + motor + ruedas) / 4;
-
-        calidad = Math.round(calidad * 10) / 10.0;
+        if(carroceria <= 0.6){
+            calidad += 1;
+        }else{
+            calidad += 0.3;
+        }
+        
+        if(chasis <= 0.7){
+            calidad += 1; 
+        }else{
+            calidad +=0.3;
+        }
+        
+        if(motor <= 0.5){
+            calidad += 1; 
+        }else{
+            calidad +=0.3;
+        }
+        
+        if(ruedas <= 0.4){
+            calidad += 1; 
+        }else{
+            calidad +=0.3;
+        }
+        
+        calidad = calidad /4;
 
         return calidad;
     }
 
-    public double calidadB() {
-        double carroceria = 0;
-        double chasis = 0;
-        double motor = 0;
-        double ruedas = 0;
-        double calidad = 0;
-
-        carroceria = Math.round((Math.random() * 10)) / 10.0;
-        chasis = Math.round((Math.random() * 10)) / 10.0;
-        motor = Math.round((Math.random() * 10)) / 10.0;
-        ruedas = Math.round((Math.random() * 10)) / 10.0;
-
-        calidad = (carroceria + chasis + motor + ruedas) / 4;
-
-        calidad = Math.round(calidad * 10) / 10.0;
-
-        return calidad;
-    }
-
-    public int prioridad() {
-        double calidad = calidadL();
+    public int prioridad() { 
+      double calidad = calidad();
+        
+        
         int prioridad;
+        
+        System.out.println(calidad);
 
         if (calidad >= 0.8) {
             prioridad = 1;
-        } else if (0.4 <= calidad && calidad < 0.8) {
+        } else if (0.6 <= calidad && calidad < 0.8) {
             prioridad = 2;
         } else {
             prioridad = 3;
@@ -144,9 +152,8 @@ public class Admin {
     public void insertarL() {
         this.idL++;
         int prioridad = prioridad();
-        int hp = new Random().nextInt(800-300)+300;
+        int hp = new Random().nextInt(800 - 300) + 300;
         Carro lambo = new Carro(this.idL, prioridad, "Lamborghini", hp, "Lambo");
-        System.out.println("HP lambo: " + hp);
         switch (lambo.prioridad) {
             case 1:
                 nivel1L.insert(lambo);
@@ -166,8 +173,8 @@ public class Admin {
     public void insertarB() {
         this.idB++;
         int prioridad = prioridad();
-         int hp = new Random().nextInt(800-300)+300;
-          System.out.println("HP Buga: " + hp);
+        int hp = new Random().nextInt(800 - 300) + 300;
+
         Carro buga = new Carro(this.idB, prioridad, "Bugatti", hp, "Buga");
 
         switch (buga.prioridad) {
@@ -261,43 +268,43 @@ public class Admin {
             return null;
         }
     }
-    
-    public String BL1(){
+
+    public String BL1() {
         String text = nivel1B.text();
         return text;
     }
-    
-    public String BL2(){
+
+    public String BL2() {
         String text = nivel2B.text();
         return text;
     }
-    
-    public String BL3(){
+
+    public String BL3() {
         String text = nivel3B.text();
         return text;
     }
-    
-    public String LL1(){
+
+    public String LL1() {
         String text = nivel1L.text();
         return text;
     }
-    
-    public String LL2(){
+
+    public String LL2() {
         String text = nivel2L.text();
         return text;
     }
-    
-    public String LL3(){
+
+    public String LL3() {
         String text = nivel3L.text();
         return text;
     }
-    
-    public String refuerzoL(){
+
+    public String refuerzoL() {
         String text = refuerzoL.text();
         return text;
     }
-    
-    public String refuerzoB(){
+
+    public String refuerzoB() {
         String text = refuerzoB.text();
         return text;
     }
