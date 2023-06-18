@@ -78,14 +78,18 @@ public class Cola {
             
             Carro carro = nodo.data;
             
-            text += "ID: " + carro.id + " Prioridad: " + carro.prioridad + " Marca: " + carro.marca + " Performance: " + carro.hp;
+            text += "ID: " + carro.id + " Prioridad: " + carro.prioridad + " Marca: " + carro.marca + " Performance: " + carro.hp + "\n";
             
             nodo = nodo.next;
             
         }
-        
+                
         
         return text;
+    }
+
+    public Nodo getInicio() {
+        return Inicio;
     }
     
   

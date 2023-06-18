@@ -5,6 +5,7 @@
 package proyectoso2;
 
 import Classes.CPU;
+import java.io.IOException;
 import java.util.Random;
 
 /**
@@ -16,10 +17,10 @@ public class Main {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, IOException {
         // TODO code application logic here
         
-       interfaz interfaz = new interfaz();
+       CPU cpu = new CPU();
         
         
     }

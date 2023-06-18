@@ -30,6 +30,8 @@ public class IA {
         
        double prob = Math.round((Math.random() * 10)) / 10.0;
        
+       
+       
        Thread.sleep(10000);
        
        if(prob <= 0.27){ // empate
