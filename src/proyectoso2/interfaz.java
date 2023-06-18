@@ -65,6 +65,9 @@ public class interfaz extends javax.swing.JFrame {
         jTextField7 = new javax.swing.JTextField();
         circuitB = new javax.swing.JTextField();
         circuitL = new javax.swing.JTextField();
+        state = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         winners = new javax.swing.JTextArea();
@@ -213,6 +216,13 @@ public class interfaz extends javax.swing.JFrame {
         getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 220, 90, 30));
         getContentPane().add(circuitB, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 200, 350, 40));
         getContentPane().add(circuitL, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 260, 350, 40));
+        getContentPane().add(state, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 140, 100, 40));
+
+        jLabel13.setText("State");
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 110, 30, 20));
+
+        jLabel14.setText("Ganadores");
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 520, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/Captura de pantalla 2023-06-14 a la(s) 9.20.54 p. m..png"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 540));
@@ -221,7 +231,7 @@ public class interfaz extends javax.swing.JFrame {
         winners.setRows(5);
         jScrollPane1.setViewportView(winners);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 550, 560, -1));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 550, 560, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -281,6 +291,8 @@ public class interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -303,6 +315,7 @@ public class interfaz extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
+    public javax.swing.JTextField state;
     public javax.swing.JTextArea winners;
     // End of variables declaration//GEN-END:variables
 }

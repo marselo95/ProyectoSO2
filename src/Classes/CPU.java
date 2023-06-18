@@ -77,9 +77,11 @@ public class CPU {
                 //System.out.println("ID:" + carroB.id + " Prioridad:" + carroB.prioridad + " Marca: " + carroB.marca + " hp: "+ carroB.hp + " Localizador: "+ carroB.localizador);
                 interfaz.circuitB.setText("ID: " + carroB.id + " Prioridad: " + carroB.prioridad + " Marca: " + carroB.marca + " Performance: " + carroB.hp);
                 interfaz.circuitL.setText("ID: " + carroL.id + " Prioridad: " + carroL.prioridad + " Marca: " + carroL.marca + " Performance: " + carroL.hp);
-                ia.recibirCarros(carroB, carroL, admin.nivel1B, admin.nivel2B, admin.nivel3B, admin.nivel1L, admin.nivel2L, admin.nivel3L, admin.refuerzoB, admin.refuerzoL, admin.ganadores);
+                interfaz.state.setText("Corriendo");
+                String state = ia.recibirCarros(carroB, carroL, admin.nivel1B, admin.nivel2B, admin.nivel3B, admin.nivel1L, admin.nivel2L, admin.nivel3L, admin.refuerzoB, admin.refuerzoL, admin.ganadores);
                 interfaz.circuitB.setText("");
                 interfaz.circuitL.setText("");
+                 interfaz.state.setText(state);
             }
 
             cola1B = admin.BL1(); //Obtiene la lista de prioridad en un String
