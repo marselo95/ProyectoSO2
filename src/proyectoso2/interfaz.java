@@ -69,6 +69,8 @@ public class interfaz extends javax.swing.JFrame {
         jTextField8 = new javax.swing.JTextField();
         jTextField9 = new javax.swing.JTextField();
         jTextField10 = new javax.swing.JTextField();
+        timeB = new javax.swing.JTextField();
+        timeL = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -183,7 +185,7 @@ public class interfaz extends javax.swing.JFrame {
         RefuerzoL.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jScrollPane6.setViewportView(RefuerzoL);
 
-        getContentPane().add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 470, 280, -1));
+        getContentPane().add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 470, 310, -1));
 
         P3L.setEditable(false);
         P3L.setColumns(20);
@@ -191,7 +193,7 @@ public class interfaz extends javax.swing.JFrame {
         P3L.setRows(4);
         jScrollPane7.setViewportView(P3L);
 
-        getContentPane().add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 370, 280, -1));
+        getContentPane().add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 370, 310, -1));
 
         P2L.setEditable(false);
         P2L.setColumns(20);
@@ -199,7 +201,7 @@ public class interfaz extends javax.swing.JFrame {
         P2L.setRows(4);
         jScrollPane8.setViewportView(P2L);
 
-        getContentPane().add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 270, 280, -1));
+        getContentPane().add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 270, 310, -1));
 
         P1L.setEditable(false);
         P1L.setColumns(20);
@@ -207,7 +209,7 @@ public class interfaz extends javax.swing.JFrame {
         P1L.setRows(4);
         jScrollPane9.setViewportView(P1L);
 
-        getContentPane().add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 170, 280, -1));
+        getContentPane().add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 170, 310, -1));
 
         circuitB.setEditable(false);
         circuitB.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -254,6 +256,21 @@ public class interfaz extends javax.swing.JFrame {
         jTextField10.setForeground(new java.awt.Color(0, 51, 51));
         getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 240, 90, 30));
 
+        timeB.setEditable(false);
+        timeB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                timeBActionPerformed(evt);
+            }
+        });
+        getContentPane().add(timeB, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 130, 90, 30));
+
+        timeL.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                timeLActionPerformed(evt);
+            }
+        });
+        getContentPane().add(timeL, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 130, 90, 30));
+
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/Captura de pantalla 2023-06-18 a la(s) 7.28.10 p. m..png"))); // NOI18N
         jLabel12.setMaximumSize(new java.awt.Dimension(1132, 659));
         jLabel12.setMinimumSize(new java.awt.Dimension(1132, 659));
@@ -270,6 +287,14 @@ public class interfaz extends javax.swing.JFrame {
     private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField9ActionPerformed
+
+    private void timeBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeBActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_timeBActionPerformed
+
+    private void timeLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeLActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_timeLActionPerformed
 
     /**
      * @param args the command line arguments
@@ -346,6 +371,8 @@ public class interfaz extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
     public javax.swing.JTextField state;
+    public static javax.swing.JTextField timeB;
+    public static javax.swing.JTextField timeL;
     public javax.swing.JTextArea winners;
     // End of variables declaration//GEN-END:variables
 }

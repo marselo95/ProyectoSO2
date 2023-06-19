@@ -26,9 +26,8 @@ public class CPU {
     String colaRB;
     Admin admin;
     IA ia;
-    
+
     int contadorB, contadorL;
-    
 
     public CPU() throws InterruptedException, IOException {
         admin = new Admin();
@@ -69,7 +68,6 @@ public class CPU {
             interfaz.P2L.setText(cola2L);
             interfaz.P3L.setText(cola3L);
             interfaz.RefuerzoL.setText(colaRL);
-            
 
             if (carroL != null && carroB != null) {
                 // System.out.println("ID:" + carroL.id + " Prioridad:" + carroL.prioridad + " Marca: " + carroL.marca + " hp: "+ carroL.hp + " Localizador: "+ carroL.localizador);
@@ -79,9 +77,15 @@ public class CPU {
                 interfaz.circuitL.setText("ID: " + carroL.id + " Prioridad: " + carroL.prioridad + " Marca: " + carroL.marca + " Performance: " + carroL.hp);
                 interfaz.state.setText("Corriendo");
                 String state = ia.recibirCarros(carroB, carroL, admin.nivel1B, admin.nivel2B, admin.nivel3B, admin.nivel1L, admin.nivel2L, admin.nivel3L, admin.refuerzoB, admin.refuerzoL, admin.ganadores);
+
+                interfaz.state.setText(state);
+                Thread.sleep(1000);
                 interfaz.circuitB.setText("");
                 interfaz.circuitL.setText("");
-                 interfaz.state.setText(state);
+                interfaz.timeL.setText("");
+                interfaz.timeB.setText("");
+                interfaz.state.setText("waiting");
+
             }
 
             cola1B = admin.BL1(); //Obtiene la lista de prioridad en un String
@@ -138,22 +142,22 @@ public class CPU {
             carroL = admin.sigL();
             carroB = admin.sigB();
             contadorCiclos++;
-            
+
             Nodo nodo = admin.ganadores.getInicio();
-            
+
             contadorB = contadorL = 0;
-             
-            while(nodo != null){
-               Carro carro = nodo.data;
-                if(carro.marca == "Bugatti"){
+
+            while (nodo != null) {
+                Carro carro = nodo.data;
+                if (carro.marca == "Bugatti") {
                     contadorB++;
-                }else{
+                } else {
                     contadorL++;
                 }
                 nodo = nodo.next;
-                
+
             }
-            
+
             interfaz.PuntajeB.setText(String.valueOf(contadorB));
             interfaz.PuntajeL.setText(String.valueOf(contadorL));
             interfaz.winners.setText(admin.ganadores.text());
