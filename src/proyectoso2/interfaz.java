@@ -64,12 +64,13 @@ public class interfaz extends javax.swing.JFrame {
         state = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         winners = new javax.swing.JTextArea();
         jTextField8 = new javax.swing.JTextField();
         jTextField9 = new javax.swing.JTextField();
         jTextField10 = new javax.swing.JTextField();
+        timeB = new javax.swing.JTextField();
+        timeL = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -85,10 +86,12 @@ public class interfaz extends javax.swing.JFrame {
         jLabel3.setText("Puntaje");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 370, -1, 50));
 
+        PuntajeL.setEditable(false);
         PuntajeL.setForeground(new java.awt.Color(0, 51, 51));
         PuntajeL.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(PuntajeL, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 420, 70, 30));
 
+        PuntajeB.setEditable(false);
         PuntajeB.setForeground(new java.awt.Color(0, 51, 51));
         PuntajeB.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(PuntajeB, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 420, 70, 30));
@@ -134,6 +137,7 @@ public class interfaz extends javax.swing.JFrame {
         jLabel11.setText("Reparando");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 440, -1, -1));
 
+        P2B.setEditable(false);
         P2B.setColumns(20);
         P2B.setForeground(new java.awt.Color(0, 51, 51));
         P2B.setRows(4);
@@ -141,6 +145,7 @@ public class interfaz extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 280, -1));
 
+        P1B.setEditable(false);
         P1B.setColumns(20);
         P1B.setForeground(new java.awt.Color(0, 51, 51));
         P1B.setRows(4);
@@ -148,6 +153,7 @@ public class interfaz extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 280, -1));
 
+        P3B.setEditable(false);
         P3B.setColumns(20);
         P3B.setForeground(new java.awt.Color(0, 51, 51));
         P3B.setRows(4);
@@ -164,6 +170,7 @@ public class interfaz extends javax.swing.JFrame {
         });
         getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 230, 90, 30));
 
+        RefuerzoB.setEditable(false);
         RefuerzoB.setColumns(20);
         RefuerzoB.setForeground(new java.awt.Color(0, 51, 51));
         RefuerzoB.setRows(4);
@@ -171,40 +178,48 @@ public class interfaz extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 460, 280, -1));
 
+        RefuerzoL.setEditable(false);
         RefuerzoL.setColumns(20);
         RefuerzoL.setForeground(new java.awt.Color(0, 51, 51));
         RefuerzoL.setRows(4);
         RefuerzoL.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jScrollPane6.setViewportView(RefuerzoL);
 
-        getContentPane().add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 470, 280, -1));
+        getContentPane().add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 470, 310, -1));
 
+        P3L.setEditable(false);
         P3L.setColumns(20);
         P3L.setForeground(new java.awt.Color(0, 51, 51));
         P3L.setRows(4);
         jScrollPane7.setViewportView(P3L);
 
-        getContentPane().add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 370, 280, -1));
+        getContentPane().add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 370, 310, -1));
 
+        P2L.setEditable(false);
         P2L.setColumns(20);
         P2L.setForeground(new java.awt.Color(0, 51, 51));
         P2L.setRows(4);
         jScrollPane8.setViewportView(P2L);
 
-        getContentPane().add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 270, 280, -1));
+        getContentPane().add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 270, 310, -1));
 
+        P1L.setEditable(false);
         P1L.setColumns(20);
         P1L.setForeground(new java.awt.Color(0, 51, 51));
         P1L.setRows(4);
         jScrollPane9.setViewportView(P1L);
 
-        getContentPane().add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 170, 280, -1));
+        getContentPane().add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 170, 310, -1));
 
+        circuitB.setEditable(false);
         circuitB.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         getContentPane().add(circuitB, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 180, 330, 80));
 
+        circuitL.setEditable(false);
         circuitL.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         getContentPane().add(circuitL, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 280, 330, 80));
+
+        state.setEditable(false);
         getContentPane().add(state, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 140, 130, 30));
 
         jLabel14.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
@@ -217,9 +232,7 @@ public class interfaz extends javax.swing.JFrame {
         jLabel13.setText("Estado");
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 120, 50, 20));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/Captura de pantalla 2023-06-14 a la(s) 9.20.54 p. m..png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 540));
-
+        winners.setEditable(false);
         winners.setColumns(20);
         winners.setRows(5);
         jScrollPane1.setViewportView(winners);
@@ -243,6 +256,21 @@ public class interfaz extends javax.swing.JFrame {
         jTextField10.setForeground(new java.awt.Color(0, 51, 51));
         getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 240, 90, 30));
 
+        timeB.setEditable(false);
+        timeB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                timeBActionPerformed(evt);
+            }
+        });
+        getContentPane().add(timeB, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 130, 90, 30));
+
+        timeL.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                timeLActionPerformed(evt);
+            }
+        });
+        getContentPane().add(timeL, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 130, 90, 30));
+
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/Captura de pantalla 2023-06-18 a la(s) 7.28.10 p. m..png"))); // NOI18N
         jLabel12.setMaximumSize(new java.awt.Dimension(1132, 659));
         jLabel12.setMinimumSize(new java.awt.Dimension(1132, 659));
@@ -259,6 +287,14 @@ public class interfaz extends javax.swing.JFrame {
     private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField9ActionPerformed
+
+    private void timeBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeBActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_timeBActionPerformed
+
+    private void timeLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeLActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_timeLActionPerformed
 
     /**
      * @param args the command line arguments
@@ -314,7 +350,6 @@ public class interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -336,6 +371,8 @@ public class interfaz extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
     public javax.swing.JTextField state;
+    public static javax.swing.JTextField timeB;
+    public static javax.swing.JTextField timeL;
     public javax.swing.JTextArea winners;
     // End of variables declaration//GEN-END:variables
 }
