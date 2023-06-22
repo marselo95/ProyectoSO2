@@ -215,16 +215,16 @@ public class interfaz extends javax.swing.JFrame {
         circuitB.setEditable(false);
         circuitB.setForeground(new java.awt.Color(0, 51, 51));
         circuitB.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        getContentPane().add(circuitB, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 180, 330, 80));
+        getContentPane().add(circuitB, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 180, 370, 80));
 
         circuitL.setEditable(false);
         circuitL.setForeground(new java.awt.Color(0, 51, 51));
         circuitL.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        getContentPane().add(circuitL, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 280, 330, 80));
+        getContentPane().add(circuitL, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 280, 370, 80));
 
         state.setEditable(false);
         state.setForeground(new java.awt.Color(0, 51, 51));
-        getContentPane().add(state, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 140, 130, 30));
+        getContentPane().add(state, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 140, 160, 30));
 
         jLabel14.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
@@ -242,7 +242,7 @@ public class interfaz extends javax.swing.JFrame {
         winners.setRows(5);
         jScrollPane1.setViewportView(winners);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 550, 330, -1));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 550, 370, -1));
 
         jTextField9.setBackground(new java.awt.Color(0, 51, 51));
         jTextField9.setForeground(new java.awt.Color(0, 51, 51));
