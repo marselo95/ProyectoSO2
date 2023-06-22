@@ -6,7 +6,6 @@ package proyectoso2;
 
 import Classes.CPU;
 import java.io.IOException;
-import java.util.Random;
 
 /**
  *

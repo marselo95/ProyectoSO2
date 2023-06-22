@@ -10,7 +10,7 @@ import proyectoso2.interfaz;
 
 /**
  *
- * @author Marcelo
+ * @author mkferrerteran
  */
 public class CPU {
 
