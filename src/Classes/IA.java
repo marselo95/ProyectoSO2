@@ -15,10 +15,12 @@ public class IA {
 
     int bugaListos;
     int lamboListos;
+    int contadorCarreras;
 
     public IA() {
         this.bugaListos = 0;
         this.lamboListos = 0;
+        this.contadorCarreras = 0;
     }
 
     public int getBugaListos() {
@@ -36,8 +38,12 @@ public class IA {
         String state;
 
         int n = 0;
+        
+        contadorCarreras++;
+        interfaz.contCarreras.setText(String.valueOf(contadorCarreras));
 
         Thread.sleep(10000);
+        
 
         if (prob <= 0.27) { // empate
 

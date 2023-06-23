@@ -142,7 +142,7 @@ public class CPU {
             carroL = admin.sigL();
             carroB = admin.sigB();
             contadorCiclos++;
-
+            
             Nodo nodo = admin.ganadores.getInicio();
 
             contadorB = contadorL = 0;
@@ -157,7 +157,8 @@ public class CPU {
                 nodo = nodo.next;
 
             }
-
+            
+            
             interfaz.PuntajeB.setText(String.valueOf(contadorB));
             interfaz.PuntajeL.setText(String.valueOf(contadorL));
             interfaz.winners.setText(admin.ganadores.text());

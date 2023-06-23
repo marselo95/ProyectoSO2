@@ -66,12 +66,17 @@ public class interfaz extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         winners = new javax.swing.JTextArea();
-        jTextField9 = new javax.swing.JTextField();
         timeB = new javax.swing.JTextField();
+        jSpinner1 = new javax.swing.JSpinner();
         jLabel2 = new javax.swing.JLabel();
         jTextField10 = new javax.swing.JTextField();
         timeL = new javax.swing.JTextField();
         jTextField11 = new javax.swing.JTextField();
+        botonVelocidad = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
+        jTextField12 = new javax.swing.JTextField();
+        jLabel16 = new javax.swing.JLabel();
+        contCarreras = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -85,17 +90,17 @@ public class interfaz extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Puntaje");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 450, -1, 50));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 440, -1, 50));
 
         PuntajeL.setEditable(false);
         PuntajeL.setForeground(new java.awt.Color(0, 51, 51));
         PuntajeL.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        getContentPane().add(PuntajeL, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 490, 70, 30));
+        getContentPane().add(PuntajeL, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 480, 70, 30));
 
         PuntajeB.setEditable(false);
         PuntajeB.setForeground(new java.awt.Color(0, 51, 51));
         PuntajeB.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        getContentPane().add(PuntajeB, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 490, 70, 30));
+        getContentPane().add(PuntajeB, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 480, 70, 30));
 
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -215,26 +220,26 @@ public class interfaz extends javax.swing.JFrame {
         circuitB.setEditable(false);
         circuitB.setForeground(new java.awt.Color(0, 51, 51));
         circuitB.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        getContentPane().add(circuitB, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 180, 370, 80));
+        getContentPane().add(circuitB, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 170, 370, 80));
 
         circuitL.setEditable(false);
         circuitL.setForeground(new java.awt.Color(0, 51, 51));
         circuitL.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        getContentPane().add(circuitL, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 280, 370, 80));
+        getContentPane().add(circuitL, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 270, 370, 80));
 
         state.setEditable(false);
         state.setForeground(new java.awt.Color(0, 51, 51));
-        getContentPane().add(state, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 140, 160, 30));
+        getContentPane().add(state, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 130, 160, 30));
 
         jLabel14.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Ganadores");
-        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 530, -1, -1));
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 520, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Estado");
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 120, 50, 20));
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 110, 50, 20));
 
         winners.setEditable(false);
         winners.setColumns(20);
@@ -242,16 +247,7 @@ public class interfaz extends javax.swing.JFrame {
         winners.setRows(5);
         jScrollPane1.setViewportView(winners);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 550, 370, -1));
-
-        jTextField9.setBackground(new java.awt.Color(0, 51, 51));
-        jTextField9.setForeground(new java.awt.Color(0, 51, 51));
-        jTextField9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField9ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 460, 90, 30));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 544, 370, 90));
 
         timeB.setEditable(false);
         timeB.setForeground(new java.awt.Color(0, 51, 51));
@@ -261,12 +257,13 @@ public class interfaz extends javax.swing.JFrame {
                 timeBActionPerformed(evt);
             }
         });
-        getContentPane().add(timeB, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 410, 80, 30));
+        getContentPane().add(timeB, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 400, 80, 30));
+        getContentPane().add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 590, 50, 30));
 
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Tiempo de recorrido");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 380, -1, 20));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 360, -1, 30));
 
         jTextField10.setBackground(new java.awt.Color(0, 51, 51));
         jTextField10.setForeground(new java.awt.Color(0, 51, 51));
@@ -275,7 +272,7 @@ public class interfaz extends javax.swing.JFrame {
                 jTextField10ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 376, 160, 30));
+        getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 360, 160, 30));
 
         timeL.setForeground(new java.awt.Color(0, 51, 51));
         timeL.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -284,11 +281,46 @@ public class interfaz extends javax.swing.JFrame {
                 timeLActionPerformed(evt);
             }
         });
-        getContentPane().add(timeL, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 410, 80, 30));
+        getContentPane().add(timeL, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 400, 80, 30));
 
         jTextField11.setBackground(new java.awt.Color(0, 51, 51));
         jTextField11.setForeground(new java.awt.Color(0, 51, 51));
         getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 240, 90, 30));
+
+        botonVelocidad.setForeground(new java.awt.Color(0, 51, 51));
+        botonVelocidad.setText("Cambiar");
+        botonVelocidad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonVelocidadActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botonVelocidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 590, -1, -1));
+
+        jLabel15.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel15.setText("Cantidad de carreras");
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 570, -1, -1));
+
+        jTextField12.setBackground(new java.awt.Color(0, 51, 51));
+        jTextField12.setForeground(new java.awt.Color(0, 51, 51));
+        jTextField12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField12ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 450, 90, 30));
+
+        jLabel16.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel16.setText("Cambiar velociadad");
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 570, -1, -1));
+
+        contCarreras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                contCarrerasActionPerformed(evt);
+            }
+        });
+        getContentPane().add(contCarreras, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 590, 80, -1));
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/Captura de pantalla 2023-06-18 a la(s) 7.28.10 p. m..png"))); // NOI18N
         jLabel12.setMaximumSize(new java.awt.Dimension(1132, 659));
@@ -303,10 +335,6 @@ public class interfaz extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
 
-    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField9ActionPerformed
-
     private void timeBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeBActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_timeBActionPerformed
@@ -318,6 +346,18 @@ public class interfaz extends javax.swing.JFrame {
     private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField10ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField10ActionPerformed
+
+    private void botonVelocidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonVelocidadActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botonVelocidadActionPerformed
+
+    private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField12ActionPerformed
+
+    private void contCarrerasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contCarrerasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_contCarrerasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -365,14 +405,18 @@ public class interfaz extends javax.swing.JFrame {
     public javax.swing.JTextField PuntajeL;
     public javax.swing.JTextArea RefuerzoB;
     public javax.swing.JTextArea RefuerzoL;
+    private javax.swing.JButton botonVelocidad;
     public javax.swing.JTextField circuitB;
     public javax.swing.JTextField circuitL;
+    public static javax.swing.JTextField contCarreras;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -390,10 +434,11 @@ public class interfaz extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JScrollPane jScrollPane9;
+    private javax.swing.JSpinner jSpinner1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField9;
     public javax.swing.JTextField state;
     public static javax.swing.JTextField timeB;
     public static javax.swing.JTextField timeL;
