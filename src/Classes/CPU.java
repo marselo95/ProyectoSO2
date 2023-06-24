@@ -41,8 +41,16 @@ public class CPU {
         Carro carroB = null;
 
         boolean activo = true;
+        interfaz.time.setValue(ia.time);
 
         while (activo) {
+            
+            
+            
+            int t = (int) interfaz.time.getValue();
+            ia.time = t;
+            System.out.println(ia.time);
+            
             admin.actCola(admin.nivel3B, admin.nivel2B); //El administrador ejecuta la funcion de actualizar colas
             admin.actCola(admin.nivel2B, admin.nivel1B);
             admin.actCola(admin.nivel3L, admin.nivel2L);

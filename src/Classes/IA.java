@@ -16,6 +16,7 @@ public class IA {
     int bugaListos;
     int lamboListos;
     int contadorCarreras;
+    public static int time = 10;
 
     public IA() {
         this.bugaListos = 0;
@@ -42,7 +43,7 @@ public class IA {
         contadorCarreras++;
         interfaz.contCarreras.setText(String.valueOf(contadorCarreras));
 
-        Thread.sleep(10000);
+        Thread.sleep(time * 1000);
         
 
         if (prob <= 0.27) { // empate

@@ -67,12 +67,11 @@ public class interfaz extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         winners = new javax.swing.JTextArea();
         timeB = new javax.swing.JTextField();
-        jSpinner1 = new javax.swing.JSpinner();
+        time = new javax.swing.JSpinner();
         jLabel2 = new javax.swing.JLabel();
         jTextField10 = new javax.swing.JTextField();
         timeL = new javax.swing.JTextField();
         jTextField11 = new javax.swing.JTextField();
-        botonVelocidad = new javax.swing.JButton();
         jLabel15 = new javax.swing.JLabel();
         jTextField12 = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
@@ -258,7 +257,7 @@ public class interfaz extends javax.swing.JFrame {
             }
         });
         getContentPane().add(timeB, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 400, 80, 30));
-        getContentPane().add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 590, 50, 30));
+        getContentPane().add(time, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 590, 50, 30));
 
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -287,15 +286,6 @@ public class interfaz extends javax.swing.JFrame {
         jTextField11.setForeground(new java.awt.Color(0, 51, 51));
         getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 240, 90, 30));
 
-        botonVelocidad.setForeground(new java.awt.Color(0, 51, 51));
-        botonVelocidad.setText("Cambiar");
-        botonVelocidad.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonVelocidadActionPerformed(evt);
-            }
-        });
-        getContentPane().add(botonVelocidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 590, -1, -1));
-
         jLabel15.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Cantidad de carreras");
@@ -313,7 +303,7 @@ public class interfaz extends javax.swing.JFrame {
         jLabel16.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("Cambiar velociadad");
-        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 570, -1, -1));
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 570, -1, -1));
 
         contCarreras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -346,10 +336,6 @@ public class interfaz extends javax.swing.JFrame {
     private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField10ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField10ActionPerformed
-
-    private void botonVelocidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonVelocidadActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_botonVelocidadActionPerformed
 
     private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
         // TODO add your handling code here:
@@ -405,7 +391,6 @@ public class interfaz extends javax.swing.JFrame {
     public javax.swing.JTextField PuntajeL;
     public javax.swing.JTextArea RefuerzoB;
     public javax.swing.JTextArea RefuerzoL;
-    private javax.swing.JButton botonVelocidad;
     public javax.swing.JTextField circuitB;
     public javax.swing.JTextField circuitL;
     public static javax.swing.JTextField contCarreras;
@@ -434,12 +419,12 @@ public class interfaz extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JScrollPane jScrollPane9;
-    private javax.swing.JSpinner jSpinner1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField2;
     public javax.swing.JTextField state;
+    public javax.swing.JSpinner time;
     public static javax.swing.JTextField timeB;
     public static javax.swing.JTextField timeL;
     public javax.swing.JTextArea winners;
